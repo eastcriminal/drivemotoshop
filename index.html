@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +24,13 @@
     <div class="container">
       <div class="header__top-inner">
         <nav class="menu">
-          <ul class="nenu__list">
+          <button class="menu__btn">
+            <div class="menu__btn-line"></div>
+            <div class="menu__btn-line"></div>
+            <div class="menu__btn-line"></div>
+          </button>
+
+          <ul class="menu__list">
             <li class="menu__item">
               <a href="" class="menu__link">Магазины</a>
             </li>
@@ -60,6 +70,105 @@
     </div>
   </div>
 
+  <ul class="menu-mobile__list">
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/user-icon.svg" alt="">
+        <p>Войти</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/user-icon.svg" alt="">
+        <p>Регистрация</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/heart-icon.svg" alt="">
+        <p>Избранное</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/shopping-cart-icon.svg" alt="">
+        <p>Корзина</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/shop-icon.svg" alt="">
+        <p>Магазины</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/promotion-icon.svg" alt="">
+        <p>Акции</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/delivery-icon.svg" alt="">
+        <p>Доставка и оплата</p>
+      </a>
+    </li>
+
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Квадрациклы</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Катера</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Гидроциклы</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Лодки</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Вездеходы</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Снегоходы</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Двигатели</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Запчасти</p>
+      </a>
+    </li>
+  </ul>
+
+  <div class="menu__mobile-linewrapper">
+    <ul class="menu__mobile-line">
+      <li class="menu__item">
+        <a href="" class="menu__link">Магазины</a>
+      </li>
+      <li class="menu__item">
+        <a href="" class="menu__link">Акции</a>
+      </li>
+      <li class="menu__item">
+        <a href="" class="menu__link">Доставка и оплата</a>
+      </li>
+    </ul>
+  </div>
   <div class="header__bottom">
     <div class="container">
       <ul class="menu-categories">
@@ -91,7 +200,6 @@
     </div>
   </div>
 </header>
-
 
 <section class="banner-section page-section">
   <div class="container">
@@ -144,12 +252,12 @@
   <div class="container">
     <div class="search__inner">
       <div class="search__tabs">
-        <a class="tab search__tabs-item tab--active" href="#tab-1">Поиск по номеру</a>
+        <a class="tab search__tabs-item tab&#45;&#45;active" href="#tab-1">Поиск по номеру</a>
         <a class="tab search__tabs-item" href="#tab-2">Поиск по марке</a>
         <a class="tab search__tabs-item" href="#tab-3">Поиска по названию товара</a>
       </div>
       <div class="serch__content">
-        <div id="tab-1" class="tabs-content search__content-item tabs-content--active">
+        <div id="tab-1" class="tabs-content search__content-item tabs-content&#45;&#45;active">
           <form class="search__content-form" action="">
             <input class="search__content-input" type="text" placeholder="Введите номер">
             <button class="search__content-btn" type="submit">искать</button>
@@ -241,7 +349,7 @@
       <h3 class="product__title">Популярные товары</h3>
       <div class="tabs-wrapper">
         <div class="tabs products__tabs">
-          <a class="tab products__tab tab--active" href="#product-tab-1">запчасти</a>
+          <a class="tab products__tab tab&#45;&#45;active" href="#product-tab-1">запчасти</a>
           <a class="tab products__tab" href="#product-tab-2">моторы</a>
           <a class="tab products__tab" href="#product-tab-3">шины</a>
           <a class="tab products__tab" href="#product-tab-4">электроника</a>
@@ -249,7 +357,7 @@
           <a class="tab products__tab" href="#product-tab-6">аксессуары</a>
         </div>
         <div class="tabs-container products__container">
-          <div id="product-tab-1" class="tabs-content products__content tabs-content--active">
+          <div id="product-tab-1" class="tabs-content products__content tabs-content&#45;&#45;active">
             <div class="product-slider">
               <div class="product-slider__item">
                 <div class="product-item__wrapper">
@@ -259,7 +367,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -279,7 +387,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -299,7 +407,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -319,7 +427,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -339,7 +447,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -359,7 +467,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -379,7 +487,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -399,7 +507,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -422,7 +530,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -442,7 +550,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -462,7 +570,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -482,7 +590,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -502,7 +610,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -522,7 +630,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -542,7 +650,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -562,7 +670,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -602,7 +710,7 @@
       <h3 class="product__title">С этим товаром покупают</h3>
       <div class="tabs-wrapper">
         <div class="tabs products__tabs">
-          <a class="tab products__tab tab--active" href="#popular-tab-1">запчасти</a>
+          <a class="tab products__tab tab&#45;&#45;active" href="#popular-tab-1">запчасти</a>
           <a class="tab products__tab" href="#popular-tab-2">моторы</a>
           <a class="tab products__tab" href="#popular-tab-3">шины</a>
           <a class="tab products__tab" href="#popular-tab-4">электроника</a>
@@ -610,7 +718,7 @@
           <a class="tab products__tab" href="#popular-tab-6">аксессуары</a>
         </div>
         <div class="tabs-container products__container">
-          <div id="popular-tab-1" class="tabs-content products__content tabs-content--active">
+          <div id="popular-tab-1" class="tabs-content products__content tabs-content&#45;&#45;active">
             <div class="product-slider">
               <div class="product-slider__item">
                 <div class="product-item__wrapper">
@@ -620,7 +728,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -640,7 +748,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -660,7 +768,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -680,7 +788,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -700,7 +808,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -720,7 +828,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -740,7 +848,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -760,7 +868,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -783,7 +891,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -803,7 +911,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -823,7 +931,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -843,7 +951,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -863,7 +971,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -883,7 +991,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -903,7 +1011,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -923,7 +1031,7 @@
                   </button>
                   <a class="product-item__notify-link" href=""><span>Сообщить о
                                                 поступлении</span></a>
-                  <a class="product-item product-item--sale" href="#">
+                  <a class="product-item product-item&#45;&#45;sale" href="#">
                     <p class="product-item__hover-text">посмотреть товар</p>
                     <img class="product-item__img" src="images/products/product-1.png" alt="">
                     <h4 class="product-item__title">Водонепроницаемый Рюкзак</h4>
@@ -1014,6 +1122,9 @@
 
 <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
 <script src="js/slick.min.js "></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.rateyo.min.js"></script>
 <script src="js/main.js "></script>
 </body>
 
